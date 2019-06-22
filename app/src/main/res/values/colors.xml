@@ -6,4 +6,8 @@
     <color name="white">#FFFFFF</color>
     <color name="gray">#C0C0C0</color>
     <color name="background">#FAFAFA</color>
+    <color name="apple">#E41749</color>
+    <color name="strawberry">#F5587B</color>
+    <color name="orange">#FF8A5C</color>
+    <color name="lemon">#FFF591</color>
 </resources>
