@@ -23,14 +23,12 @@ class MainActivity : AppCompatActivity() {
         searchBar = findViewById(R.id.searchBar)
         settingButton = findViewById(R.id.settingButton)
         bookmarkImage = findViewById(R.id.savedRecipeMark)
-        //bookmarkImage.setColorFilter(ContextCompat.getColor(MainActivity@this, R.color.lemon))
         settingButton.setOnClickListener {
             val intent = Intent(this, Main2Activity::class.java).apply {
                 putExtra("EUNTAE", "FROM MAIN ACTIVITY")
             }
             startActivity(intent)
         }
-
         Toast.makeText(this@MainActivity, "Hello World", Toast.LENGTH_SHORT).show()
     }
 

@@ -9,19 +9,12 @@ import android.widget.TextView
 
 class Main2Activity : AppCompatActivity() {
 
-
-    private lateinit var helloWorld2: TextView
-    private lateinit var nextActivity2: Button
+    private lateinit var recipe_title:TextView;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-        helloWorld2 = findViewById(R.id.HelloWorld2)
-        nextActivity2 = findViewById(R.id.testButton2)
-        helloWorld2.text = intent.getStringExtra("EUNTAE")
-        nextActivity2.setOnClickListener {
-            finish()
-        }
+        recipe_title = findViewById(R.id.titleBar_SavedRecipes)
     }
 
     override fun onStart() {
