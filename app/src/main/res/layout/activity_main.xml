@@ -48,6 +48,7 @@
         </EditText>
     </android.support.v7.widget.Toolbar>
 
+        <!--Bookmark Text-->
         <TextView
             android:id="@+id/savedRecipeText"
             android:layout_height="wrap_content"
@@ -58,6 +59,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="50dp"/>
 
+    <!--Bookmark Image-->
     <ImageView
             android:id="@+id/savedRecipeMark"
             android:layout_width="wrap_content"

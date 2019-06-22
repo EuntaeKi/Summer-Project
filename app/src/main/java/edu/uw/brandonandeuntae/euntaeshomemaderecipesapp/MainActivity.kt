@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock.EXTRA_MESSAGE
+import android.support.v4.content.ContextCompat
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
@@ -14,13 +15,15 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var  searchBar: android.support.v7.widget.Toolbar
     private lateinit var settingButton: ImageView
+    private lateinit var bookmarkImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         searchBar = findViewById(R.id.searchBar)
         settingButton = findViewById(R.id.settingButton)
-
+        bookmarkImage = findViewById(R.id.savedRecipeMark)
+        //bookmarkImage.setColorFilter(ContextCompat.getColor(MainActivity@this, R.color.lemon))
         settingButton.setOnClickListener {
             val intent = Intent(this, Main2Activity::class.java).apply {
                 putExtra("EUNTAE", "FROM MAIN ACTIVITY")
