@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Overall Structure Container -->
+<!-- For "Main" Activity-->
+<!-- Contains Setting Button, Search Bar -->
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -6,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-<!--android:background="@drawable/login_edittext"-->
+
+    <!-- Setting Icon -->
     <ImageView
             android:id="@+id/settingButton"
             android:src="@drawable/baseline_settings_black_24"
@@ -17,6 +21,7 @@
             app:layout_constraintTop_toTopOf="parent">
     </ImageView>
 
+    <!-- Search Bar -->
     <android.support.v7.widget.Toolbar
             android:id="@+id/searchBar"
             android:layout_width="match_parent"
@@ -25,6 +30,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:elevation="10dp">
 
+        <!-- Horizontal Container for Search Bar -->
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -32,6 +38,7 @@
                 android:orientation="vertical"
                 app:layout_constraintTop_toTopOf="parent"
                 android:gravity="center|end">
+
 
             <LinearLayout
                     android:layout_width="match_parent"
