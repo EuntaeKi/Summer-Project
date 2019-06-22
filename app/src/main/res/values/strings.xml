@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Euntaes Homemade Recipes App</string>
+    <string name="search_bar">Search for a recipe</string>
 </resources>
