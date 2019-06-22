@@ -6,29 +6,28 @@ import android.os.Bundle
 import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.util.Log
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var helloWorld1: TextView
-    private lateinit var nextActivity1: Button
+    private lateinit var  searchBar: android.support.v7.widget.Toolbar
+    private lateinit var settingButton: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        helloWorld1 = findViewById(R.id.HelloWorld1)
-        nextActivity1 = findViewById(R.id.testButton1)
-        helloWorld1.text = "Hi Euntae"
+        searchBar = findViewById(R.id.searchBar)
+        settingButton = findViewById(R.id.settingButton)
 
-        nextActivity1.setOnClickListener {
+        settingButton.setOnClickListener {
             val intent = Intent(this, Main2Activity::class.java).apply {
                 putExtra("EUNTAE", "FROM MAIN ACTIVITY")
             }
             startActivity(intent)
         }
 
-        Log.d("Main1", "Hi Euntae has been printed")
         Toast.makeText(this@MainActivity, "Hello World", Toast.LENGTH_SHORT).show()
     }
 
